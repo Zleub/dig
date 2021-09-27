@@ -1,0 +1,161 @@
+REXPaint v1.60
+
+I=0000000 Initializing resources
+I=0000005 Initializing Rogue Engine X
+I=0000005 |   Starting SDL
+I=0000025 |   Importing icon
+I=0000026 |   Confirmed resource initialization
+I=0000026 |   Loading colors
+I=0000026 |   Initializing font type data
+I=0000026 |   Mapping standard ASCII values
+I=0000026 |   Loading fonts
+I=0000027 |   |   [font set: CP437 12x12]
+I=0000031 |   |   ...cp437_12x12.png
+I=0000032 |   |   ...cp437_12x12.png
+I=0000032 |   |   [font set: CP437 14x14]
+I=0000037 |   |   ...cp437_14x14.png
+I=0000039 |   |   ...cp437_14x14.png
+I=0000039 |   |   [font set: CP437 16x16]
+I=0000046 |   |   ...cp437_16x16.png
+I=0000049 |   |   ...cp437_16x16.png
+I=0000049 |   |   [font set: CP437 18x18]
+I=0000054 |   |   ...cp437_18x18.png
+I=0000058 |   |   ...cp437_18x18.png
+I=0000058 |   |   [font set ignored: CP437 20x20] (resolution exceeds desktop)
+I=0000058 |   |   [font set: CP437 8x8]
+I=0000062 |   |   ...cp437_8x8.png
+I=0000063 |   |   ...cp437_8x8.png
+I=0000063 |   |   [font set: CP437 10x10]
+I=0000066 |   |   ...cp437_10x10.png
+I=0000067 |   |   ...cp437_10x10.png
+I=0000067 |   |   [font set: test 10x10]
+I=0000089 |   |   ...tiles.png
+I=0000109 |   |   ...tiles.png
+I=0000109 |   |   [font set removed: test 10x10] (resolution exceeds desktop)
+I=0000109 |   \---DONE
+I=0000109 |   Setting video mode
+I=0000109 |   |   Calculating dimensions
+I=0000109 |   |   ...charW=12
+I=0000109 |   |   ...charH=12
+I=0000109 |   |   ...wMin=936
+I=0000109 |   |   ...hMin=720
+I=0000109 |   |   ...wWanted=936
+I=0000109 |   |   ...hWanted=720
+I=0000109 |   |   All video modes available
+I=0000109 |   |   Setting software video mode
+I=0000119 |   \---DONE
+I=0000119 |   Setting video mode
+I=0000119 |   |   Calculating dimensions
+I=0000119 |   |   ...charW=12
+I=0000119 |   |   ...charH=12
+I=0000119 |   |   ...wMin=936
+I=0000119 |   |   ...hMin=720
+I=0000119 |   |   ...wWanted=936
+I=0000119 |   |   ...hWanted=720
+I=0000119 |   |   All video modes available
+I=0000119 |   |   Setting software video mode
+I=0000123 |   \---DONE
+I=0000123 |   Initializing audio
+I=0000962 |   Creating console
+I=0000966 \---DONE
+I=0000967 Setting video mode
+I=0000967 |   Calculating dimensions
+I=0000967 |   ...charW=10
+I=0000967 |   ...charH=10
+I=0000967 |   ...wMin=780
+I=0000967 |   ...hMin=600
+I=0000967 |   ...wWanted=780
+I=0000968 |   ...hWanted=600
+I=0000968 |   All video modes available
+I=0000968 |   Setting software video mode
+I=0000980 \---DONE
+I=0000982 RP::initialize() | Initializing program
+I=0000982 |   Mapping font glyphs
+I=0000982 |   Creating game consoles
+I=0000982 |   CProgram() | Creating CProgram
+I=0000982 |   |   Initializing input domains and commands
+I=0000982 |   |   Loading inline colors
+I=0000982 |   \---DONE
+I=0000982 |   Creating top-level consoles
+I=0000982 |   ...CPaint
+I=0000983 |   Loading palette: Palette
+I=0000984 |   ...CBrowse
+I=0000985 |   ...CCanvas
+I=0000986 |   ...CPicker
+I=0000986 |   ...CFilename
+I=0000986 |   ...CResize
+I=0000986 |   ...CConfirm
+I=0000987 |   ...COptions
+I=0000987 |   ...CCommands
+I=0000987 |   ...CMessage
+I=0000987 |   ...CMessage 2
+I=0000987 |   Http::newsCheck() | Checking version and retrieving news
+I=0000987 |   \---DONE
+I=0000987 |   Resolving address...
+I=0000987 |   Starting REX loop
+I=0000994 |   Connecting...
+I=0001133 |   Sending content...
+I=0001133 |   Waiting for ACK...
+I=0001702 |   Got 385 bytes: HTTP/1.1 200 OK
+Date: Mon, 27 Sep 2021 11:44:15 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+70
+version_v1.60:REXPaint v1.60 is out! See the announcement on Grid Sage Forums for the latest version info.</END>
+
+I=0001702 |   POST succeeded
+I=0001702 |   Closing socket...
+I=0001703 \---DONE
+I=0003174 Setting video mode
+I=0003174 |   Calculating dimensions
+I=0003174 |   ...charW=12
+I=0003174 |   ...charH=12
+I=0003174 |   ...wMin=936
+I=0003175 |   ...hMin=720
+I=0003175 |   ...wWanted=936
+I=0003175 |   ...hWanted=720
+I=0003175 |   All video modes available
+I=0003175 |   Setting software video mode
+I=0003185 \---DONE
+I=0034275 Setting video mode
+I=0034275 |   Calculating dimensions
+I=0034275 |   ...charW=14
+I=0034275 |   ...charH=14
+I=0034275 |   ...wMin=1092
+I=0034275 |   ...hMin=840
+I=0034275 |   ...wWanted=1092
+I=0034275 |   ...hWanted=840
+I=0034275 |   All video modes available
+I=0034275 |   Setting software video mode
+I=0034287 \---DONE
+I=0036056 Setting video mode
+I=0036056 |   Calculating dimensions
+I=0036056 |   ...charW=16
+I=0036056 |   ...charH=16
+I=0036056 |   ...wMin=1248
+I=0036056 |   ...hMin=960
+I=0036056 |   ...wWanted=1248
+I=0036056 |   ...hWanted=960
+I=0036056 |   All video modes available
+I=0036056 |   Setting software video mode
+I=0036069 \---DONE
+I=0138494 Setting video mode
+I=0138494 |   Calculating dimensions
+I=0138494 |   ...charW=14
+I=0138494 |   ...charH=14
+I=0138494 |   ...wMin=1092
+I=0138494 |   ...hMin=840
+I=0138495 |   ...wWanted=1092
+I=0138495 |   ...hWanted=840
+I=0138495 |   All video modes available
+I=0138495 |   Setting software video mode
+I=0138506 \---DONE
+I=0244227 Saving config
+I=0244229 exitREXPaint() | Cleaning up program before exit

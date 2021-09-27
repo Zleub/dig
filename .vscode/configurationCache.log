@@ -1,0 +1,1 @@
+{"buildTargets":[".PHONY","all","clean","fclean","re","src/main.o","src\\circle.o","src\\entity.o","src\\game.o","src\\gameSetup.o","src\\main.o","src\\tile.o","src\\tileset.o"],"launchTargets":["c:\\Users\\adebray\\Desktop\\dig>dig.exe()"],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

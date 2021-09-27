@@ -1,0 +1,40 @@
+h  16  17 // triangle
+h  26  27 // arrow
+h  40  41 // ()
+h  47  92 // /\
+h  60  62 // <>
+h  91  93 // []
+h 123 125 // {}
+h 169 170 // uneven corner
+h 174 175 // double bracket
+h 180 195 // single lines...
+h 192 217
+h 218 191
+h 185 204 // double lines...
+h 200 188
+h 201 187
+h 181 198 // mixed lines...
+h 182 199
+h 211 189
+h 212 190
+h 213 184
+h 214 183
+h 221 222 // halves
+h 242 243 // >=/<=
+
+v  24  25 // arrow
+v  30  31 // triangle
+v  47  92 // /\
+v 193 194 // single lines...
+v 192 218
+v 191 217
+v 202 203 // double lines...
+v 200 201
+v 187 188
+v 208 210 // mixed lines...
+v 207 209
+v 211 214
+v 212 213
+v 183 189
+v 184 190
+v 220 223 // halves

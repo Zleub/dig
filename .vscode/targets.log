@@ -1,0 +1,448 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for Windows32
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Mon Sep 27 15:39:49 2021
+
+# Variables
+
+# environment
+SYSTEMDRIVE = C:
+# makefile (from 'Makefile', line 17)
+OBJ = $(SRC:.cpp=.o)
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 9)
+SRC = src\circle.cpp src\entity.cpp src\game.cpp src\gameSetup.cpp src\tileset.cpp src\tile.cpp src\main.cpp
+# environment
+USERPROFILE = C:\Users\adebray
+# environment
+LOCALAPPDATA = C:\Users\adebray\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-e4e5d6ca-a04c-4770-9b61-375caee029b6-sock
+# environment
+VSCODE_CWD = C:\Users\adebray\AppData\Local\Programs\Microsoft VS Code
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11384_QEBTSLOTONLWOXLM
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\adebray\AppData\Roaming\Code\CachedData\7f6ab5485bbc008386c4386d08766667e155244e
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\adebray\AppData\Local\Temp
+# default
+.INCLUDE_DIRS = .
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\adebray\OneDrive
+# makefile
+CURDIR := c:/Users/adebray/Desktop/dig
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 11384
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := Windows32
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := sh.exe
+# environment
+HOMEPATH = \Users\adebray
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Calibre2\;C:\Users\adebray\AppData\Local\Microsoft\WindowsApps;C:\Users\adebray\AppData\Local\atom\bin;C:\Users\adebray\AppData\Local\GitHubDesktop\bin;C:\Users\adebray\AppData\Roaming\npm;C:\Users\adebray\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Users\adebray\AppData\Local\Microsoft\WindowsApps;C:\Users\adebray\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\mingw64\bin;C:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin;
+# environment
+COMPUTERNAME = DESKTOP-GEHO6QF
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132742676932340079
+# environment
+LOGONSERVER = \\DESKTOP-GEHO6QF
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = adebray
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# automatic
+?F = $(notdir $?)
+# makefile (from 'Makefile', line 3)
+INC = -I include -I lib -I lib\SDL2-2.0.16\x86_64-w64-mingw32\include\SDL2 -I lib\SDL2_ttf-2.0.15\x86_64-w64-mingw32\include\SDL2 -I lib\SDL2_image-2.0.5\x86_64-w64-mingw32\include\SDL2
+# environment
+PROGRAMW6432 = C:\Program Files
+# makefile (from 'Makefile', line 1)
+NAME = dig.exe
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = DESKTOP-GEHO6QF
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
+# makefile
+.DEFAULT_GOAL := all
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-GEHO6QF
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+PUBLIC = C:\Users\Public
+# environment
+APPDATA = C:\Users\adebray\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\adebray\AppData\Local\Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\44ada95d9187cc9fd43e577629cb129b-1.60.2-main-sock
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+# environment
+PROCESSOR_REVISION = 8e0a
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+# variable set hash-table stats:
+# Load=99/1024=10%, Rehash=0, Collisions=12/133=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# src (key c:/Users/adebray/Desktop/dig/src, mtime 1632749948): 15 files, no impossibilities so far.
+# . (key c:/Users/adebray/Desktop/dig, mtime 1632749948): 27 files, no impossibilities.
+
+# 42 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+%.o: %.cpp
+#  recipe to execute (from 'Makefile', line 32):
+	$(CXX) -g -std=c++17 $(INC) -c $< -o $@ 
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+src\circle.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-25 12:41:13
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src\gameSetup.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-27 14:10:53
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src\main.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-25 12:15:14
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src\tile.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-25 12:21:46
+#  File has been updated.
+#  Successfully updated.
+
+src\gameSetup.o: src\gameSetup.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src\gameSetup'
+#  Last modified 2021-09-27 15:36:36
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 32):
+	$(CXX) -g -std=c++17 $(INC) -c $< -o $@ 
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-27 15:39:16
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src\entity.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-25 12:14:56
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 37):
+	del $(OBJ)
+
+src\main.o: src\main.cpp
+#  Implicit r 
+ule search has been done.
+#  Implicit/static pattern stem: 'src\main'
+#  Last modified 2021-09-27 15:36:44
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 32):
+	$(CXX) -g -std=c++17 $(INC) -c $< -o $@ 
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src\tile.o: src\tile.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src\tile'
+#  Last modified 2021-09-27 15:36:41
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 32):
+	$(CXX) -g -std=c++17 $(INC) -c $< -o $@ 
+
+# Not a target:
+src\game.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-27 15:37:55
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src\entity.o: src\entity.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src\entity'
+#  Last modified 2021-09-27 15:36:30
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 32):
+	$(CXX) -g -std=c++17 $(INC) -c $< -o $@ 
+
+all: src\circle.o src\entity.o src\game.o src\gameSetup.o src\tileset.o src\tile.o src\main.o
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# * := 
+# automatic
+# < := src\circle.o
+# automatic
+# + := src\circle.o src\entity.o src\game.o src\gameSetup.o src\tileset.o src\tile.o src\main.o
+# automatic
+# % := 
+# automatic
+# ^ := src\circle.o src\entity.o src\game.o src\gameSetup.o src\tileset.o src\tile.o src\main.o
+# automatic
+# ? := src\circle.o src\entity.o src\game.o src\gameSetup.o src\tileset.o src\tile.o src\main.o
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/14=7%
+#  recipe to execute (from 'Makefile', line 20):
+	$(CXX) -o $(NAME) $^ \
+	-l stdc++fs \
+	-l mingw32 \
+	-L lib\SDL2-2.0.16\x86_64-w64-mingw32\lib \
+	-l SDL2main \
+	-l SDL2 \
+	-L lib\SDL2_ttf-2.0.15\x86_64-w64-mingw32\lib \
+	-l SDL2_ttf \
+	-L lib\SDL2_image-2.0.5\\x86_64-w64-mingw32\\lib \
+	-l SDL2_image
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 40):
+	del dig.exe
+
+src\game.o: src\game.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src\game'
+#  Last modified 2021-09-27 15:38:02
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 32):
+	$(CXX) -g -std=c++17 $(INC) -c $< -o $@ 
+
+# Not a target:
+src\tileset.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-27 15:38:53
+#  File has been updated.
+#  Successfully updated.
+
+src\tileset.o: src\tileset.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src\tileset'
+#  Last modified 2021-09-27 15:39:08
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 32):
+	$(CXX) -g -std=c++17 $(INC) -c $< -o $@ 
+
+src\circle.o: src\circle.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src\circle'
+#  Last modified 2021-09-27 15:36:30
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 32):
+	$(CXX) -g -std=c++17 $(INC) -c $< -o $@ 
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all re clean fclean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=22/1024=2%, Rehash=0, Collisions=0/70=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 70 / storage = 745 B / avg = 10 B
+# current buf: size = 8174 B / used = 745 B / count = 70 / avg = 10 B
+
+# strcache performance: lookups = 98 / hit rate = 28%
+# hash-table stats:
+# Load=70/8192=1%, Rehash=0, Collisions=0/98=0%
+# Finished Make data base on Mon Sep 27 15:39:49 2021
+
+ 

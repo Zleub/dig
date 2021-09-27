@@ -1,0 +1,6 @@
+make.exe fclean --dry-run --keep-going --print-directory
+make: Entering directory 'c:/Users/adebray/Desktop/dig'
+del src\circle.o src\entity.o src\game.o src\gameSetup.o src\tileset.o src\tile.o src\main.o
+del dig.exe
+make: Leaving directory 'c:/Users/adebray/Desktop/dig'
+ 
