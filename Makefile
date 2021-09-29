@@ -6,7 +6,8 @@ INC = -I include \
 	-I lib\SDL2_ttf-2.0.15\x86_64-w64-mingw32\include\SDL2 \
 	-I lib\SDL2_image-2.0.5\x86_64-w64-mingw32\include\SDL2
 
-SRC = src\circle.cpp \
+SRC = src\color.cpp \
+	src\circle.cpp \
 	src\entity.cpp \
 	src\game.cpp \
 	src\gameSetup.cpp \

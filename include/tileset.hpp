@@ -7,8 +7,9 @@
 #include <iomanip>
 
 #include <nlohmann/json.hpp>
-
 #include <SDL_image.h>
+
+#include <color.hpp>
 
 SDL_Texture *loadTexture(std::string path, SDL_Renderer *renderer);
 
@@ -38,9 +39,9 @@ public:
     Tileset(fs::path, SDL_Renderer *);
     ~Tileset();
 
-    void draw(unsigned char c, SDL_Rect *dst);
-    void draw(std::string id, SDL_Rect *dst);
-    void draw(unsigned char c, SDL_Rect *dst, int color_mod);
+    void draw(unsigned char, SDL_Rect *);
+    void draw(std::string, SDL_Rect *);
+    void draw(unsigned char, SDL_Rect *, Color);
 
 };
 

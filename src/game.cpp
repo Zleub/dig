@@ -47,16 +47,18 @@ Game::Game() :
     // term = std::vector<int>(TERM_WIDTH * TERM_HEIGHT);
     // term_text = std::vector<int>(TERM_WIDTH * TERM_HEIGHT);
 
-    for (size_t y = 0; y < TERM_HEIGHT; y++)
+    for (int y = 0; y < TERM_HEIGHT; y++)
     {
-        for (size_t x = 0; x < TERM_WIDTH; x++)
+        for (int x = 0; x < TERM_WIDTH; x++)
         {
-            int r = 0x00 + (255 / ((TERM_WIDTH + TERM_HEIGHT) / 2)) * (x + y) / 2;
-            int g = 0x00 + (255 / TERM_WIDTH) * x;
-            int b = 0x00 + (255 / TERM_HEIGHT) * y;
 
             Tile & tile = term_renderer[x + y * TERM_WIDTH];
-            tile.fg_color = r + (g << 8) + (b << 16);
+            tile.fg_color = {
+                .r = 0x00u + (255 / ((TERM_WIDTH + TERM_HEIGHT) / 2)) * (x + y) / 2,
+                .g = 0x00u + (255 / TERM_WIDTH) * x,
+                .b = 0x00u + (255 / TERM_HEIGHT) * y,
+                .a = 255
+            };
             tile.tile_index = 176 + rand() % 3;
             // term[x + y * TERM_WIDTH] = r + (g << 8) + (b << 16);
             // term_text[x + y * TERM_WIDTH] = 179 + rand() % 40;
@@ -95,7 +97,7 @@ void Game::run()
 
         input();
 
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+        SDL_SetRenderDrawColor(renderer, BLACK.r, BLACK.g, BLACK.b, BLACK.a);
         SDL_RenderClear(renderer);
         term_print();
 
@@ -106,10 +108,8 @@ void Game::run()
             STEP_HEIGHT};
         tileset->draw("player_male", &dest);
 
-        // int rand_dst = rand() % (TERM_WIDTH * TERM_HEIGHT);
-        // term_text[rand_dst] = 176 + rand() % 3;
-        // SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-        // SDL_RenderFillRect(renderer, &dest);
+        int rand_dst = rand() % (TERM_WIDTH * TERM_HEIGHT);
+        term_renderer[rand_dst].tile_index = 176 + rand() % 3;
 
         Uint64 end = SDL_GetPerformanceCounter();
         float elapsedMS = (end - start) / (float)SDL_GetPerformanceFrequency() * 1000.0f;
@@ -159,25 +159,6 @@ void Game::term_print()
                 .w = STEP_WIDTH,
                 .h = STEP_HEIGHT};
 
-
-            // int color = term[term_x + term_y * TERM_WIDTH];
-            // int r = color & 0x000000FF;
-            // int g = (color & 0x0000FF00) >> 8;
-            // int b = (color & 0x00FF0000) >> 16;
-
-            // if (term_x == TERM_WIDTH / 2 || term_y == TERM_HEIGHT / 2)
-            // {
-            //     g = 0;
-            //     b = 0;
-            // }
-
-            // SDL_SetRenderDrawColor(renderer, r, g, b, 255);
-            // SDL_RenderFillRect(renderer, &rect);
-
-            // renderTile("asd", rect);
-            // renderTile(176, &rect, color);
-            // int text = term_text[term_x + term_y * TERM_WIDTH];
-
             Tile & tile = term_renderer[term_x + term_y * TERM_WIDTH];
             tileset->draw(tile.tile_index, &rect, tile.fg_color);
         }
@@ -202,42 +183,4 @@ void Game::renderText(std::string text, SDL_Rect *dest)
     SDL_RenderCopy(renderer, tex, NULL, dest);
     SDL_DestroyTexture(tex);
     SDL_FreeSurface(surf);
-}
-
-void Game::renderTile(char text, SDL_Rect *dst)
-{
-    // SDL_Color fg = {255, 255, 255};
-    // SDL_Surface *surf = TTF_RenderGlyph_Solid(font, text.c_str()[0], fg);
-
-    // SDL_Texture *tex = SDL_CreateTextureFromSurface(renderer, surf);
-
-    // SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
-    // SDL_RenderFillRect(renderer, &dest);
-    // SDL_Rect src = {
-    //     10, 0, 10, 10};
-
-    // SDL_RenderCopy(renderer, texture, &src, &dest);
-    // SDL_DestroyTexture(tex);
-    // SDL_FreeSurface(surf);
-
-    tileset->draw(text, dst);
-}
-
-void Game::renderTile(int text, SDL_Rect *dst)
-{
-    // SDL_Color fg = {255, 255, 255};
-    // SDL_Surface *surf = TTF_RenderGlyph_Solid(font, text.c_str()[0], fg);
-
-    // SDL_Texture *tex = SDL_CreateTextureFromSurface(renderer, surf);
-
-    // SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
-    // SDL_RenderFillRect(renderer, &dest);
-    // SDL_Rect src = {
-    //     10, 0, 10, 10};
-
-    // SDL_RenderCopy(renderer, texture, &src, &dest);
-    // SDL_DestroyTexture(tex);
-    // SDL_FreeSurface(surf);
-
-    tileset->draw(text, dst);
 }

@@ -28,7 +28,6 @@ Tileset::Tileset(fs::path path, SDL_Renderer *renderer) :
     width = tile_config["tile_info"][0]["width"];
     height = tile_config["tile_info"][0]["height"];
 
-    // std::cout <<  tile_config["tiles-new"].size() << std::endl;
     for (nlohmann::json j : tile_config["tiles-new"]) {
         std::cout << j["file"] << std::endl;
         
@@ -67,11 +66,6 @@ Tileset::Tileset(fs::path path, SDL_Renderer *renderer) :
                     }
                 }
             }
-            
-            // std::cout << "Available keys from TileMap:" << std::endl;
-            // for( std::pair<std::string, nlohmann::json> p : tileMap) {
-            //     std::cout << p.first << std::endl;
-            // }
         }
     }
 
@@ -91,13 +85,11 @@ void Tileset::draw(unsigned char c, SDL_Rect *dst) {
     SDL_RenderCopy(renderer, textureMap["fallback.png"].tex, &src, dst);
 }
 
-void Tileset::draw(unsigned char c, SDL_Rect *dst, int color_mod) {
+void Tileset::draw(unsigned char c, SDL_Rect *dst, Color color) {
     SDL_Rect src = { width * (c % 16), height * (c / 16), width, height };
-     int r = color_mod & 0x000000FF;
-    int g = (color_mod & 0x0000FF00) >> 8;
-    int b = (color_mod & 0x00FF0000) >> 16;
 
-    SDL_SetTextureColorMod(textureMap["fallback.png"].tex, r, g, b);
+
+    SDL_SetTextureColorMod(textureMap["fallback.png"].tex, color.r, color.g, color.b);
     SDL_RenderCopy(renderer, textureMap["fallback.png"].tex, &src, dst);
 }
 
@@ -107,10 +99,6 @@ void Tileset::draw(std::string id, SDL_Rect *dst) {
     int index = tile["fg"];
     std::string file = tile["file"];
     SDL_Rect src = { width * (index % 16), height * (index / 16), width, height };
-    //  int r = color_mod & 0x000000FF;
-    // int g = (color_mod & 0x0000FF00) >> 8;
-    // int b = (color_mod & 0x00FF0000) >> 16;
 
-    // SDL_SetTextureColorMod(textureMap["ASCIITiles.png"].tex, r, g, b);
     SDL_RenderCopy(renderer, textureMap[file].tex, &src, dst);
 }

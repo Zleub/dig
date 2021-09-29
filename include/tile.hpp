@@ -1,9 +1,11 @@
+#include <color.hpp>
+
 class Tile
 {
 private:
 public:
-    int fg_color;
-    int bg_color;
+    Color fg_color;
+    Color bg_color;
 
     int tile_index;
 
